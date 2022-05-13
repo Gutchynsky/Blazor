@@ -1,0 +1,29 @@
+﻿@page "/counter"
+
+<PageTitle>MKF2: Test spacji</PageTitle>
+
+<div style="text-align:center; color:white;">
+<h1>Przetestuj swoją spację!</h1>
+
+<p role="status">Obecna ilość naciśnięć: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount" style="width:250px">    ___    </button><br />
+<img src="https://cdn.discordapp.com/attachments/458304542338056194/974691798192631838/pobrane.gif" style="width:500px;height:500px; margin:50px;"/>
+</div>
+
+<style type=text/css>
+    body
+{
+    background-color:#292929;
+}
+
+</style>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
